@@ -1,5 +1,7 @@
 #include <iostream>
 #include <string>
+#define HEADER_H_
+#include "Header.h"
 
 using namespace std;
 
@@ -126,8 +128,8 @@ int main()
 		} while (sklPts != 0);
 
 		cout << skill[0] << " - Power" << endl << skill[1] << " - Agility" << endl << skill[2] << " - Stamina" << endl << skill[3] << " - Chrasima" << endl << skill[4] << " - Lumpther" << endl;
-
+		randUno();
 	system("pause");
 	return 0;
-
+	
 }
