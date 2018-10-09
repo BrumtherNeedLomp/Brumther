@@ -3,10 +3,10 @@
 #include <thread>
 #include <chrono>
 #include <time.h>
-
+#include "../RpgLamp/Header.h"
 using namespace std;
 
-int main() {
+int rand1() {
 
 	int dangerNoodle;
 	int spookylamp;
