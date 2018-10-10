@@ -3,7 +3,7 @@
 #include <thread>
 #include <chrono>
 #include <time.h>
-#include "../RpgLamp/Header.h"
+#include "Header.h"
 using namespace std;
 
 int rand1() {
