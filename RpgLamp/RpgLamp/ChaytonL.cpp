@@ -38,6 +38,6 @@ int dumb()
 
 
 
-	system("pause");
+
 	return 0;
 }
