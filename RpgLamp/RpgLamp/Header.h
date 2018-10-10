@@ -1,5 +1,6 @@
 #pragma once
 #include <string>
 #define HEADER_H_ 
+#include "Header.h"
 
-void rand1();
+int rand1();
