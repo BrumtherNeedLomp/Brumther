@@ -14,13 +14,13 @@ using namespace std;
 int skillSet(int sklPts, string name, int sklChoice, int skillPointInput, int xp) {
 	
 	
-	int skill[6] = {10, 10, 10, 10, 10, 0 };
+	int skill[6] = {10, 10, 5, 4, 5, 0 };
 	
 	do {
 
 		
 		cout << name << ", You have " << sklPts << " skill points left, what skill would you like to upgrade." << endl;
-		cout << "1 = HP\n2 = Power\n3 = Agility\n4 = Stamina\n5 = Charisma\n6 = Lumpther (Ultimate)" << endl;
+		cout << "1 = HP\n2 = Power\n3 = Agility\n4 = Stamina\n5 = Charisma\n6 = Lumpther (Ultimate and 40 + xp required)" << endl;
 		cin >> sklChoice;
 		if (sklChoice == 1)
 		{
@@ -142,6 +142,60 @@ int skillSet(int sklPts, string name, int sklChoice, int skillPointInput, int xp
 	return 0;
 }
 		
+int quest()
+{
+	int spookyLamp[5] = { 15 , 6, 15, 6, 2 };
+	int dangerNoodle[5] = { 5, 20, 11, 2, 2 };
+	int pokeyfish[5] = { 20, 5, 2, 5, 2, };
+	int indianMan[5] = { 5, 5, 5, 5, 25 };
+	int swegsavagejr[5] = { 50, 1, 1, 1, 1 };
+	int bowsette[5] = { 20, 3, 2, 5, 15 };
+	int chocomalk[5] = { 10, 5, 2, 10, 2 };
+	int lordFarquad[5] = { 28, 6, 4, 8, 21 };
+
+	int generator;
+	
+
+	srand(time(NULL));
+	generator = 1 + (rand() % 14);
+
+	randUno();
+	if (generator == 1 || generator == 8)
+	{
+		cout << "Danger Noodles stats are:\n " << dangerNoodle[0] << " - HP\n " << dangerNoodle[1] << " - Power\n " << dangerNoodle[2] << " - Agility\n " << dangerNoodle[3] << " - Stamina\n " << dangerNoodle[4] << " - Charisma\n";
+	}
+	else if (generator == 2 || generator == 9)
+	{
+		cout << "Danger Noodles stats are:\n " << dangerNoodle[0] << " - HP\n " << dangerNoodle[1] << " - Power\n " << dangerNoodle[2] << " - Agility\n " << dangerNoodle[3] << " - Stamina\n " << dangerNoodle[4] << " - Charisma\n";
+	}
+	else if (generator == 3 || generator == 10)
+	{
+		cout << "Danger Noodles stats are:\n " << dangerNoodle[0] << " - HP\n " << dangerNoodle[1] << " - Power\n " << dangerNoodle[2] << " - Agility\n " << dangerNoodle[3] << " - Stamina\n " << dangerNoodle[4] << " - Charisma\n";
+	}
+	else if (generator == 4 || generator == 11)
+	{
+		cout << "Danger Noodles stats are:\n " << dangerNoodle[0] << " - HP\n " << dangerNoodle[1] << " - Power\n " << dangerNoodle[2] << " - Agility\n " << dangerNoodle[3] << " - Stamina\n " << dangerNoodle[4] << " - Charisma\n";
+	}
+	else if (generator == 5 || generator == 12)
+	{
+		cout << "Danger Noodles stats are:\n " << dangerNoodle[0] << " - HP\n " << dangerNoodle[1] << " - Power\n " << dangerNoodle[2] << " - Agility\n " << dangerNoodle[3] << " - Stamina\n " << dangerNoodle[4] << " - Charisma\n";
+	}
+	else if (generator == 6 || generator == 13)
+	{ 
+		cout << "Danger Noodles stats are:\n "  << dangerNoodle[0] << " - HP\n " << dangerNoodle[1] << " - Power\n " << dangerNoodle[2] << " - Agility\n " << dangerNoodle[3] << " - Stamina\n " << dangerNoodle[4] << " - Charisma\n";
+	}
+	else if (generator == 7 || generator == 14)
+	{
+		cout << "Danger Noodles stats are:\n " << dangerNoodle[0] << " - HP\n " << dangerNoodle[1] << " - Power\n " << dangerNoodle[2] << " - Agility\n " << dangerNoodle[3] << " - Stamina\n " << dangerNoodle[4] << " - Charisma\n";
+	}
+	else
+	{
+		cout << "why broke";
+	}
+
+
+	return 0;
+}
 		
 
 
@@ -169,7 +223,9 @@ int main()
 	cout << "The Moth King, King of all LAMP, approaches you. He asks you to go to the cave and 'defeet' the monster there!\n";
 	cout << "The king tells you it is south, so you go on your way.\n";
 	cout << "As you enter the cave you here strage noises\n";
-	randUno();
+	quest();
+
+
 
 	system("pause");
 	return 0;
