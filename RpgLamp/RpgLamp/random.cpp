@@ -24,8 +24,6 @@ int randUno() {
 
 
 
-	
-
 	srand(time(NULL));
 	generator = 1 + (rand() % 14);
 
