@@ -18,7 +18,8 @@ int getNum() {
 
 int randUno() {
 
-	
+	srand(time(NULL));
+	generator = 1 + (rand() % 14);
 
 	if (generator == 1 || generator == 8) {
 
