@@ -4,3 +4,4 @@
 #define HEADER_H_
 
 int randUno();
+int getNum();

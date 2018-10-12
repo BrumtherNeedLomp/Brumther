@@ -10,19 +10,13 @@
 
 using namespace std;
 
-int spookyLamp[5] = { 15 , 6, 15, 6, 2 };
-int dangerNoodle[5] = { 5, 20, 11, 2, 2 };
-int pokeyfish[5] = { 20, 5, 2, 5, 2,};
-int indianMan[5] = { 5, 5, 5, 5, 25 };
-int swegsavagejr[5] = { 50, 1, 1, 1, 1 };
-int bowsette[5] = { 20, 3, 2, 5, 15 };
-int chocomalk[5] = { 10, 5, 2, 10, 2 };
-int lordFarquad[5] = { 28, 6, 4, 8, 21 };
 int generator;
 
+int getNum() {
+	return generator;
+}
+
 int randUno() {
-
-
 
 	srand(time(NULL));
 	generator = 1 + (rand() % 14);
