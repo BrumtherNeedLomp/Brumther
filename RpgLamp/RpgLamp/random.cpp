@@ -10,16 +10,15 @@
 
 using namespace std;
 
+int generator;
 
+int getNum() {
+	return generator;
+}
 
 int randUno() {
 
-	int generator;
-
-
-
-	srand(time(NULL));
-	generator = 1 + (rand() % 14);
+	
 
 	if (generator == 1 || generator == 8) {
 

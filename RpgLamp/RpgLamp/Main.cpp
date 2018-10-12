@@ -153,40 +153,39 @@ int quest()
 	int chocomalk[5] = { 10, 5, 2, 10, 2 };
 	int lordFarquad[5] = { 28, 6, 4, 8, 21 };
 
-	int generator;
-	
 
-	srand(time(NULL));
-	generator = 1 + (rand() % 14);
+	
+	 
+
 
 	randUno();
-	if (generator == 1 || generator == 8)
+	if (getNum() == 1 || getNum() == 8)
 	{
 		cout << "Danger Noodles stats are:\n " << dangerNoodle[0] << " - HP\n " << dangerNoodle[1] << " - Power\n " << dangerNoodle[2] << " - Agility\n " << dangerNoodle[3] << " - Stamina\n " << dangerNoodle[4] << " - Charisma\n";
 	}
-	else if (generator == 2 || generator == 9)
+	else if (getNum() == 2 || getNum() == 9)
 	{
-		cout << "Danger Noodles stats are:\n " << dangerNoodle[0] << " - HP\n " << dangerNoodle[1] << " - Power\n " << dangerNoodle[2] << " - Agility\n " << dangerNoodle[3] << " - Stamina\n " << dangerNoodle[4] << " - Charisma\n";
+		cout << "SPOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOKKKKKKKKKKKKKKKKKKKKYYYYYYYYYYYYYYY L-A-M-P stats are:\n " << spookyLamp[0] << " - HP\n " << spookyLamp[1] << " - Power\n " << spookyLamp[2] << " - Agility\n " << spookyLamp[3] << " - Stamina\n " << spookyLamp[4] << " - Charisma\n";
 	}
-	else if (generator == 3 || generator == 10)
+	else if (getNum() == 3 || getNum() == 10)
 	{
-		cout << "Danger Noodles stats are:\n " << dangerNoodle[0] << " - HP\n " << dangerNoodle[1] << " - Power\n " << dangerNoodle[2] << " - Agility\n " << dangerNoodle[3] << " - Stamina\n " << dangerNoodle[4] << " - Charisma\n";
+		cout << "Pokey Fish stats are:\n " << pokeyfish[0] << " - HP\n " << pokeyfish[1] << " - Power\n " << pokeyfish[2] << " - Agility\n " << pokeyfish[3] << " - Stamina\n " << pokeyfish[4] << " - Charisma\n";
 	}
-	else if (generator == 4 || generator == 11)
+	else if (getNum() == 4 || getNum() == 11)
 	{
-		cout << "Danger Noodles stats are:\n " << dangerNoodle[0] << " - HP\n " << dangerNoodle[1] << " - Power\n " << dangerNoodle[2] << " - Agility\n " << dangerNoodle[3] << " - Stamina\n " << dangerNoodle[4] << " - Charisma\n";
+		cout << "The Indian Man stats are:\n " << indianMan[0] << " - HP\n " << indianMan[1] << " - Power\n " << indianMan[2] << " - Agility\n " << indianMan[3] << " - Stamina\n " << indianMan[4] << " - Charisma\n";
 	}
-	else if (generator == 5 || generator == 12)
+	else if (getNum() == 5 || getNum() == 12)
 	{
-		cout << "Danger Noodles stats are:\n " << dangerNoodle[0] << " - HP\n " << dangerNoodle[1] << " - Power\n " << dangerNoodle[2] << " - Agility\n " << dangerNoodle[3] << " - Stamina\n " << dangerNoodle[4] << " - Charisma\n";
+		cout << "SWEGSAVAGEJR stats are:\n " << swegsavagejr[0] << " - HP\n " << swegsavagejr[1] << " - Power\n " << swegsavagejr[2] << " - Agility\n " << swegsavagejr[3] << " - Stamina\n " << swegsavagejr[4] << " - Charisma\n";
 	}
-	else if (generator == 6 || generator == 13)
+	else if (getNum() == 6 || getNum() == 13)
 	{ 
-		cout << "Danger Noodles stats are:\n "  << dangerNoodle[0] << " - HP\n " << dangerNoodle[1] << " - Power\n " << dangerNoodle[2] << " - Agility\n " << dangerNoodle[3] << " - Stamina\n " << dangerNoodle[4] << " - Charisma\n";
+		cout << "CHOCOMALK stats are:\n " << chocomalk [0] << " - HP\n " << chocomalk[1] << " - Power\n " << chocomalk[2] << " - Agility\n " << chocomalk[3] << " - Stamina\n " << chocomalk[4] << " - Charisma\n";
 	}
-	else if (generator == 7 || generator == 14)
+	else if (getNum() == 7 || getNum() == 14)
 	{
-		cout << "Danger Noodles stats are:\n " << dangerNoodle[0] << " - HP\n " << dangerNoodle[1] << " - Power\n " << dangerNoodle[2] << " - Agility\n " << dangerNoodle[3] << " - Stamina\n " << dangerNoodle[4] << " - Charisma\n";
+		cout << "BOWSETTE stats are:\n " << bowsette[0] << " - HP\n " << bowsette[1] << " - Power\n " << bowsette[2] << " - Agility\n " << bowsette[3] << " - Stamina\n " << bowsette[4] << " - Charisma\n";
 	}
 	else
 	{
