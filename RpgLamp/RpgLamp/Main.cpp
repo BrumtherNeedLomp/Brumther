@@ -191,7 +191,7 @@ int quest()
 				}
 				else if (cpuChoice == 2);
 				{
-					if (dangerNoodle[4] >) {}
+					if (dangerNoodle[4] > skill[4]) {}
 				}
 
 				if (dangerNoodle[3] == 1 || dangerNoodle[3] == 0)

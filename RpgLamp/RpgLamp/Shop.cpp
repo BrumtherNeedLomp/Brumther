@@ -19,7 +19,7 @@ int shop()
 	int merchant;
 
 	srand(time(NULL));
-	quotes = 1 + (rand() % 6);
+	quotes = 1 + (rand() % 7);
 	
 	if (quotes == 1) {
 		cout << " Whaddaya buyin'? " << endl;
@@ -38,6 +38,9 @@ int shop()
 	}
 	else if (quotes == 6) {
 		cout << " Got a selection of good things on sale, stranger. " << endl;
+	}
+	else if (quotes == 7) {
+		cout << " Over here, stranger! " << endl;
 	}
 
 
