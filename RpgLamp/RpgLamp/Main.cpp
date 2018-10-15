@@ -181,19 +181,6 @@ int quest()
 				cpuChoice = 1 + (rand() % 2);
 				if (cpuChoice == 1)
 				{
-					skill[0] = skill[0] - dangerNoodle[1];
-					dangerNoodle[3] = dangerNoodle[3] - 2;
-					if (skill[0] == 0) 
-					{
-						cout << "YOU LOST";
-						system("stop");
-					}
-				}
-				else if (cpuChoice == 2);
-				{
-					if (dangerNoodle[4] >) {}
-				}
-
 					if (dangerNoodle[3] == 1 || dangerNoodle[3] == 0)
 					{
 						cout << "Danger Noodle is out of stamina!!" << endl;
@@ -201,23 +188,43 @@ int quest()
 						cout << "What would you like to do?\n1 - Attack\n2 - Seduce\n3 - Run";
 						cin >> user;
 
-					if (user == 1)
+						if (user == 1)
+						{
+							dangerNoodle[0] = dangerNoodle[0] - skill[1];
+						}
+						else if (user == 2) {
+							if (skill[4] > dangerNoodle[4])
+							{
+								cout << "You dance like a macho man! And it WORKS!!!" << endl;
+							}
+							else if (skill[4] < dangerNoodle[4])
+							{
+								cout << "You dance like nobody is watching...... which nobody is!" << endl;
+							}
+
+						}
+
+					}
+					else if (cpuChoice == 2)
 					{
-						dangerNoodle[0] = dangerNoodle[0] - skill[1];
-					}
-					else if (user == 2) {
-						if (skill[4] > dangerNoodle[4])
+						if (dangerNoodle[4] > skill[4])
 						{
-							cout << "You dance like a macho man! And it WORKS!!!" << endl;
+							cout << "Danger Noodle seduces you like a women with a nice face!";
 						}
-						else if (skill[4] < dangerNoodle[4])
+						else if (dangerNoodle[4] < skill[4])
 						{
-							cout << "You dance like nobody is watching...... which nobody is!" << endl;
+							cout << "Danger Noodle tries to take your pants off but you say HEy dont touch me there thatss my nono square, and he is traumatized";
 						}
-
 					}
-
+					else if (skill[0] == 0) 
+					{
+						cout << "YOU LOST";
+						system("stop");
+					}
 				}
+				
+
+					
 				else if (dangerNoodle[3] == 1 || dangerNoodle[3] == 0)
 				{
 					
