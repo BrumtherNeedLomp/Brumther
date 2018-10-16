@@ -5,3 +5,9 @@
 
 int randUno();
 int getNum();
+int getSkill0();
+int getSkill1();
+int getSkill2();
+int getSkill3();
+int getSkill3();
+int getSkill4();
