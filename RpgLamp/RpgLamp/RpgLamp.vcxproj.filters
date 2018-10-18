@@ -24,7 +24,7 @@
     <ClCompile Include="ChaytonL.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
-    <ClCompile Include="Shop.cpp">
+    <ClCompile Include="DeathScreen.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
   </ItemGroup>
