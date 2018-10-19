@@ -5,3 +5,4 @@
 
 int randUno();
 int getNum();
+int shop();
