@@ -1,6 +1,8 @@
 #pragma once
 #include <string>
-#define HEADER_H_ 
 #include "Header.h"
+#define HEADER_H_
 
-int rand1();
+int randUno();
+int getNum();
+int shop();
