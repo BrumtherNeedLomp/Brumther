@@ -12,6 +12,10 @@ using namespace std;
 
 int cpuChoice;
 
+int xp = 0;
+
+int gold = 0;
+
 int user;
 
 int skill[6] = { 10, 10, 5, 4, 5, 0 };
@@ -29,6 +33,8 @@ int shop()
 
 	srand(time(NULL));
 	quotes = 1 + (rand() % 7);
+
+	system("cls");
 
 	if (quotes == 1) {
 		cout << " Whaddaya buyin'? " << endl;
@@ -95,7 +101,8 @@ int shop()
 	cout <<endl << skill[0] << " - HP" << endl << skill[1] << " - Power" << endl << skill[2] << " - Agility" << endl << skill[3] << " - Stamina" << endl << skill[4] << " - Chrasima" << endl << skill[5] << " - Lumpther" << endl;
 
 
-
+	system("pause");
+	system("STOP");
 	return 0;
 }
 
@@ -310,7 +317,7 @@ int quest()
 					dangerNoodle[3] = dangerNoodle[3] + 2;
 				}
 
-				cout << "What would you like to do?\n1 - Attack\n2 - Charm\n3 - Run\n>>";
+				cout << "What would you like to do?\n1 - Attack\n2 - Charm \n>>";
 				cin >> user;
 				
 				if (skill[3] != 1 || skill[3] != 0)
@@ -367,7 +374,7 @@ int quest()
 		{
 			do
 			{
-				cout << "What would you like to do?\n1 - Attack\n2 - Charm\n3 - Run\n>>";
+				cout << "What would you like to do?\n1 - Attack\n2 - Charm \n>>";
 				cin >> user;
 
 				if (skill[3] != 1 || skill[3] != 0)
@@ -477,7 +484,7 @@ int quest()
 		{
 		do
 		{
-			cout << "What would you like to do?\n1 - Attack\n2 - Charm\n3 - Run\n>>";
+			cout << "What would you like to do?\n1 - Attack\n2 - Charm \n>>";
 			cin >> user;
 
 			if (skill[3] != 1 || skill[3] != 0)
@@ -599,7 +606,7 @@ int quest()
 				if (spookyLamp[3] != 1 || spookyLamp[3] != 0)
 				{
 					srand(time(NULL)); // rng
-					cpuChoice = 1 + (rand() % 2);
+					cpuChoice = 1 + (rand() % 1);
 					if (cpuChoice == 1)
 					{
 						cout << "Danger Noodle decided to attack.\nIt did " << spookyLamp[1] / 2 << " damage!\n";
@@ -643,7 +650,7 @@ int quest()
 					spookyLamp[3] = spookyLamp[3] + 2;
 				}
 
-				cout << "What would you like to do?\n1 - Attack\n2 - Charm\n3 - Run\n>>";
+				cout << "What would you like to do?\n1 - Attack\n2 - Charm \n>>";
 				cin >> user;
 
 				if (skill[3] != 1 || skill[3] != 0)
@@ -700,7 +707,7 @@ int quest()
 		{
 			do
 			{
-				cout << "What would you like to do?\n1 - Attack\n2 - Charm\n3 - Run\n>>";
+				cout << "What would you like to do?\n1 - Attack\n2 - Charm \n>>";
 				cin >> user;
 
 				if (skill[3] != 1 || skill[3] != 0)
@@ -810,7 +817,7 @@ int quest()
 		{
 			do
 			{
-				cout << "What would you like to do?\n1 - Attack\n2 - Charm\n3 - Run\n>>";
+				cout << "What would you like to do?\n1 - Attack\n2 - Charm \n>>";
 				cin >> user;
 
 				if (skill[3] != 1 || skill[3] != 0)
@@ -975,7 +982,7 @@ int quest()
 					pokeyfish[3] = pokeyfish[3] + 2;
 				}
 
-				cout << "What would you like to do?\n1 - Attack\n2 - Charm\n3 - Run\n>>";
+				cout << "What would you like to do?\n1 - Attack\n2 - Charm \n>>";
 				cin >> user;
 
 				if (skill[3] != 1 || skill[3] != 0)
@@ -1032,7 +1039,7 @@ int quest()
 		{
 			do
 			{
-				cout << "What would you like to do?\n1 - Attack\n2 - Charm\n3 - Run\n>>";
+				cout << "What would you like to do?\n1 - Attack\n2 - Charm \n>>";
 				cin >> user;
 
 				if (skill[3] != 1 || skill[3] != 0)
@@ -1142,7 +1149,7 @@ int quest()
 		{
 			do
 			{
-				cout << "What would you like to do?\n1 - Attack\n2 - Charm\n3 - Run\n>>";
+				cout << "What would you like to do?\n1 - Attack\n2 - Charm \n>>";
 				cin >> user;
 
 				if (skill[3] != 1 || skill[3] != 0)
@@ -1306,7 +1313,7 @@ int quest()
 					indianMan[3] = indianMan[3] + 2;
 				}
 
-				cout << "What would you like to do?\n1 - Attack\n2 - Charm\n3 - Run\n>>";
+				cout << "What would you like to do?\n1 - Attack\n2 - Charm \n>>";
 				cin >> user;
 
 				if (skill[3] != 1 || skill[3] != 0)
@@ -1363,7 +1370,7 @@ int quest()
 		{
 			do
 			{
-				cout << "What would you like to do?\n1 - Attack\n2 - Charm\n3 - Run\n>>";
+				cout << "What would you like to do?\n1 - Attack\n2 - Charm \n>>";
 				cin >> user;
 
 				if (skill[3] != 1 || skill[3] != 0)
@@ -1473,7 +1480,7 @@ int quest()
 		{
 			do
 			{
-				cout << "What would you like to do?\n1 - Attack\n2 - Charm\n3 - Run\n>>";
+				cout << "What would you like to do?\n1 - Attack\n2 - Charm \n>>";
 				cin >> user;
 
 				if (skill[3] != 1 || skill[3] != 0)
@@ -1637,7 +1644,7 @@ int quest()
 					swegsavagejr[3] = swegsavagejr[3] + 2;
 				}
 
-				cout << "What would you like to do?\n1 - Attack\n2 - Charm\n3 - Run\n>>";
+				cout << "What would you like to do?\n1 - Attack\n2 - Charm \n>>";
 				cin >> user;
 
 				if (skill[3] != 1 || skill[3] != 0)
@@ -1694,7 +1701,7 @@ int quest()
 		{
 			do
 			{
-				cout << "What would you like to do?\n1 - Attack\n2 - Charm\n3 - Run\n>>";
+				cout << "What would you like to do?\n1 - Attack\n2 - Charm \n>>";
 				cin >> user;
 
 				if (skill[3] != 1 || skill[3] != 0)
@@ -1804,7 +1811,7 @@ int quest()
 		{
 			do
 			{
-				cout << "What would you like to do?\n1 - Attack\n2 - Charm\n3 - Run\n>>";
+				cout << "What would you like to do?\n1 - Attack\n2 - Charm \n>>";
 				cin >> user;
 
 				if (skill[3] != 1 || skill[3] != 0)
@@ -1969,7 +1976,7 @@ int quest()
 					chocomalk[3] = chocomalk[3] + 2;
 				}
 
-				cout << "What would you like to do?\n1 - Attack\n2 - Charm\n3 - Run\n>>";
+				cout << "What would you like to do?\n1 - Attack\n2 - Charm \n>>";
 				cin >> user;
 
 				if (skill[3] != 1 || skill[3] != 0)
@@ -2026,7 +2033,7 @@ int quest()
 		{
 			do
 			{
-				cout << "What would you like to do?\n1 - Attack\n2 - Charm\n3 - Run\n>>";
+				cout << "What would you like to do?\n1 - Attack\n2 - Charm \n>>";
 				cin >> user;
 
 				if (skill[3] != 1 || skill[3] != 0)
@@ -2136,7 +2143,7 @@ int quest()
 		{
 			do
 			{
-				cout << "What would you like to do?\n1 - Attack\n2 - Charm\n3 - Run\n>>";
+				cout << "What would you like to do?\n1 - Attack\n2 - Charm \n>>";
 				cin >> user;
 
 				if (skill[3] != 1 || skill[3] != 0)
@@ -2301,7 +2308,7 @@ int quest()
 					bowsette[3] = bowsette[3] + 2;
 				}
 
-				cout << "What would you like to do?\n1 - Attack\n2 - Charm\n3 - Run\n>>";
+				cout << "What would you like to do?\n1 - Attack\n2 - Charm \n>>";
 				cin >> user;
 
 				if (skill[3] != 1 || skill[3] != 0)
@@ -2358,7 +2365,7 @@ int quest()
 		{
 			do
 			{
-				cout << "What would you like to do?\n1 - Attack\n2 - Charm\n3 - Run\n>>";
+				cout << "What would you like to do?\n1 - Attack\n2 - Charm \n>>";
 				cin >> user;
 
 				if (skill[3] != 1 || skill[3] != 0)
@@ -2468,7 +2475,7 @@ int quest()
 		{
 			do
 			{
-				cout << "What would you like to do?\n1 - Attack\n2 - Charm\n3 - Run\n>>";
+				cout << "What would you like to do?\n1 - Attack\n2 - Charm \n>>";
 				cin >> user;
 
 				if (skill[3] != 1 || skill[3] != 0)
@@ -2583,13 +2590,10 @@ int quest()
 		cout << "why broke";
 	}
 
-	srand(time(NULL));
-	int goldrand = 1 + (rand() % 20);
 
-	cout << "As you come back to the kings palace he says, 'Thank you for completing that task. Here is some compensation.' The king gave you " << goldrand << " gold. He says, 'Spend it wisely at the merchants shop.'" << endl;
 	
 
-	shop();
+	//shop();
 	return 0;
 
 }
@@ -2599,9 +2603,9 @@ int main()
 {
 	string name;
 
-	int xp = 0;
-	int gold = 0;
-	int lomps = 0;
+	
+	
+
 	int sklPts = 10;
 	int sklChoice =0;
 	int skillPointInput = 0;
