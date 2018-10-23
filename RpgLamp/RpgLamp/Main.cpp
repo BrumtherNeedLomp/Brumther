@@ -18,10 +18,14 @@ int gold = 0;
 
 int user;
 
+int boss;
+
 int skill[6] = { 10, 10, 5, 4, 5, 0 };
+
 int shop()
 
 {
+	int lordFarquad[5] = { 28, 6, 4, 8, 21 };
 	int quotes;
 	int choice;
 	int merchant;
@@ -99,12 +103,356 @@ int shop()
 
 
 	cout <<endl << skill[0] << " - HP" << endl << skill[1] << " - Power" << endl << skill[2] << " - Agility" << endl << skill[3] << " - Stamina" << endl << skill[4] << " - Chrasima" << endl << skill[5] << " - Lumpther" << endl;
+	
+	cout << "Thanks For beating the Demo" << endl;
+	cin >> boss;
+	if (boss == 69)
+	{
+		if (lordFarquad[2] > skill[2])
+		{
+			do
+			{
+				if (lordFarquad[3] != 1 || lordFarquad[3] != 0)
+				{
+					srand(time(NULL)); // rng
+					cpuChoice = 1 + (rand() % 2);
+					if (cpuChoice == 1)
+					{
+						cout << "LordFarquad [ decided to attack.\nIt did " << lordFarquad[1] / 2 << " damage!\n";
+						skill[0] = skill[0] - (lordFarquad[1] / 2);
+						cout << "You have " << skill[0] << " - HP left!\n";
+						lordFarquad[3] = lordFarquad[3] - 1;
+						if (skill[0] <= 0)
+						{
+							DeathScreen();
+						}
+
+					}
+					else if (cpuChoice == 2)
+					{
+						cout << "LordFarquad decided to charm you.\n";
+						if (lordFarquad[4] < skill[4] || lordFarquad[4] == skill[4])
+						{
+							cout << "The charm did not work!\n";
+							lordFarquad[3] = lordFarquad[3] - 1;
+						}
+						else if (lordFarquad[4] > skill[4] && skill[1] > 5)
+						{
+							cout << "The charm worked!\nYou lost 2 attack.\n";
+							skill[1] = skill[1] - 2;
+							cout << "You have " << skill[1] << " - Attack now!\n";
+							lordFarquad[3] = lordFarquad[3] - 1;
+						}
+						else
+						{
+							cout << "HOW!";
+						}
+					}
+					else
+					{
+						cout << "HOW!\n";
+					}
+				}
+				else if (lordFarquad[3] == 1 || lordFarquad[3] == 0)
+				{
+					cout << "LordFarquad can't attack!\n";
+					lordFarquad[3] = lordFarquad[3] + 2;
+				}
+
+				cout << "What would you like to do?\n1 - Attack\n2 - Charm \n>>";
+				cin >> user;
+
+				if (skill[3] != 1 || skill[3] != 0)
+				{
+					if (user == 1)
+					{
+						cout << "You decided to attack!\nYou did " << skill[1] / 2 << " damage!\n";
+						lordFarquad[0] = lordFarquad[0] - (skill[1] / 2);
+						cout << "LordFarquad has " << lordFarquad[0] << " - HP left!\n";
+						skill[3] = skill[3] - 1;
+						if (lordFarquad[0] <= 0)
+						{
+							cout << "tencs fuur pwakly";
+							system("pause");
+							exit(0);
+						}
+
+					}
+					else if (user == 2)
+					{
+						cout << "You decided to charm LordFarquad.\n";
+						if (lordFarquad[4] < skill[4] || lordFarquad[4] == skill[4] && lordFarquad[1] > 5)
+						{
+							cout << "The charm worked!\nLordFarquad lost 2 attack.\n";
+							lordFarquad[1] = lordFarquad[1] - 2;
+							cout << "LordFarquad has " << lordFarquad[1] << " - Attack now!\n";
+							skill[3] = skill[3] - 1;
+						}
+						else if (lordFarquad[4] > skill[4])
+						{
+							cout << "The charm did not work!\n";
+							skill[3] = skill[3] - 1;
+						}
+						else
+						{
+							cout << "HOW!";
+						}
+					}
+					else
+					{
+						cout << "HOW!";
+					}
+				}
+				else if (skill[3] == 1 || skill[3] == 0)
+				{
+					cout << "You cant attack can't attack!\n";
+					skill[3] = skill[3] + 2;
+				}
+				else
+				{
+					cout << "Broke";
+				}
+			} while (skill[0] != 0 || lordFarquad[0] != 0);
+		}
+		else if (lordFarquad[2] < skill[2])
+		{
+			do
+			{
+				cout << "What would you like to do?\n1 - Attack\n2 - Charm \n>>";
+				cin >> user;
+
+				if (skill[3] != 1 || skill[3] != 0)
+				{
+					if (user == 1)
+					{
+						cout << "You decided to attack!\nYou did " << skill[1] / 2 << " damage!\n";
+						lordFarquad[0] = lordFarquad[0] - (skill[1] / 2);
+						cout << "LordFarquad has " << lordFarquad[0] << " - HP left!\n";
+						skill[3] = skill[3] - 1;
+						if (lordFarquad[0] <= 0)
+						{
+							cout << "Tencs fuur pwakly";
+							system("pause");
+							exit(0);
+						}
 
 
+					}
+					else if (user == 2)
+					{
+						cout << "You decided to charm LordFarquad.\n";
+						if (lordFarquad[4] < skill[4] || lordFarquad[4] == skill[4] && lordFarquad[1] > 5)
+						{
+							cout << "The charm worked!\n LordFarquad lost 2 attack.\n";
+							lordFarquad[1] = lordFarquad[1] - 2;
+							cout << "LordFarquad has " << lordFarquad[1] << " - Attack now!\n";
+							skill[3] = skill[3] - 1;
+						}
+						else if (lordFarquad[4] > skill[4])
+						{
+							cout << "The charm did not work!\n";
+							skill[3] = skill[3] - 1;
+						}
+						else
+						{
+							cout << "HOW!";
+						}
+					}
+					else
+					{
+						cout << "HOW!";
+					}
+				}
+				else if (skill[3] == 1 || skill[3] == 0)
+				{
+					cout << "You cant attack can't attack!\n";
+
+					skill[3] = skill[3] + 2;
+				}
+				else
+				{
+					cout << "Broke";
+				}
+				if (lordFarquad[3] != 1 || lordFarquad[3] != 0)
+				{
+					srand(time(NULL)); // rng
+					cpuChoice = 1 + (rand() % 2);
+					if (cpuChoice == 1)
+					{
+						cout << "LordFarquad decided to attack.\nIt did " << lordFarquad[1] / 2 << " damage!\n";
+						skill[0] = skill[0] - (lordFarquad[1] / 2);
+						cout << "You have " << skill[0] << " - HP left!\n";
+						lordFarquad[3] = lordFarquad[3] - 1;
+						if (skill[0] <= 0)
+						{
+							DeathScreen();
+						}
+					}
+					else if (cpuChoice == 2)
+					{
+						cout << "LordFarquad decided to charm you.\n";
+						if (lordFarquad[4] < skill[4] || lordFarquad[4] == skill[4])
+						{
+							cout << "The charm did not work!\n";
+							lordFarquad[3] = lordFarquad[3] - 1;
+						}
+						else if (lordFarquad[4] > skill[4] && skill[1] > 5)
+						{
+							cout << "The charm worked!\nYou lost 2 attack.\n";
+							skill[1] = skill[1] - 2;
+							cout << "You have " << skill[1] << " - Attack now!\n";
+							lordFarquad[3] = lordFarquad[3] - 1;
+						}
+						else
+						{
+							cout << "HOW!";
+						}
+					}
+					else
+					{
+						cout << "HOW!\n";
+					}
+				}
+				else if (lordFarquad[3] == 1 || lordFarquad[3] == 0)
+				{
+					cout << "LordFarquad can't attack!\n";
+					lordFarquad[3] = lordFarquad[3] + 2;
+				}
+				else
+				{
+					cout << "How";
+				}
+
+
+			} while (skill[0] != 0 || lordFarquad[0] != 0);
+		}
+		else if (lordFarquad[2] == skill[2])
+		{
+			do
+			{
+				cout << "What would you like to do?\n1 - Attack\n2 - Charm \n>>";
+				cin >> user;
+
+				if (skill[3] != 1 || skill[3] != 0)
+				{
+					if (user == 1)
+					{
+						cout << "You decided to attack!\nYou did " << skill[1] / 2 << " damage!\n";
+						lordFarquad[0] = lordFarquad[0] - (skill[1] / 2);
+						cout << "LordFarquad has " << lordFarquad[0] << " - HP left!\n";
+						skill[3] = skill[3] - 1;
+						if (lordFarquad[0] <= 0)
+						{
+							cout << "Tanks for playing";
+							system("pause");
+							exit(0);
+						}
+
+					}
+					else if (user == 2)
+					{
+						cout << "You decided to charm Danger Noodle.\n";
+						if (lordFarquad[4] < skill[4] || lordFarquad[4] == skill[4] && lordFarquad[1] > 5)
+						{
+							cout << "The charm worked!\nLordFarquad lost 2 attack.\n";
+							lordFarquad[1] = lordFarquad[1] - 2;
+							cout << "LordFarquad has " << lordFarquad[1] << " - Attack now!\n";
+							skill[3] = skill[3] - 1;
+						}
+						else if (lordFarquad[4] > skill[4])
+						{
+							cout << "The charm did not work!\n";
+							skill[3] = skill[3] - 1;
+						}
+						else
+						{
+							cout << "HOW!";
+						}
+					}
+					else
+					{
+						cout << "HOW!";
+					}
+				}
+				else if (skill[3] == 1 || skill[3] == 0)
+				{
+					cout << "You cant attack can't attack!\n";
+					skill[3] = skill[3] + 2;
+				}
+				else
+				{
+					cout << "Broke";
+				}
+				if (lordFarquad[3] != 1 || lordFarquad[3] != 0)
+				{
+					srand(time(NULL)); // rng
+					cpuChoice = 1 + (rand() % 2);
+					if (cpuChoice == 1)
+					{
+						cout << "LordFarquad decided to attack.\nIt did " << lordFarquad[1] / 2 << " damage!\n";
+						skill[0] = skill[0] - (lordFarquad[1] / 2);
+						cout << "You have " << skill[0] << " - HP left!\n";
+						lordFarquad[3] = lordFarquad[3] - 1;
+						if (skill[0] <= 0)
+						{
+							DeathScreen();
+						}
+					}
+					else if (cpuChoice == 2)
+					{
+						cout << "LordFarquad decided to charm you.\n";
+						if (lordFarquad[4] < skill[4] || lordFarquad[4] == skill[4])
+						{
+							cout << "The charm did not work!\n";
+							lordFarquad[3] = lordFarquad[3] - 1;
+						}
+						else if (lordFarquad[4] > skill[4] && skill[1] > 5)
+						{
+							cout << "The charm worked!\nYou lost 2 attack.\n";
+							skill[1] = skill[1] - 2;
+							cout << "You have " << skill[1] << " - Attack now!\n";
+							lordFarquad[3] = lordFarquad[3] - 1;
+						}
+						else
+						{
+							cout << "HOW!";
+						}
+					}
+					else
+					{
+						cout << "HOW!\n";
+					}
+				}
+				else if (lordFarquad[3] == 1 || lordFarquad[3] == 0)
+				{
+					cout << "Danger Noodle can't attack!\n";
+					lordFarquad[3] = lordFarquad[3] + 2;
+				}
+				else
+				{
+					cout << "How";
+				}
+
+
+			} while (skill[0] != 0 || lordFarquad[0] != 0);
+		}
+		else
+		{
+			cout << "HOW!";
+		}
+	}
+	else
+	{
+		cout << "HOW";
+	}
 	system("pause");
-	system("STOP");
+
+	exit(0);
+	
+
 	return 0;
 }
+
 
 int skillSet(int sklPts, string name, int sklChoice, int skillPointInput, int xp) {
 	
@@ -246,7 +594,7 @@ int quest()
 	int swegsavagejr[5] = { 50, 1, 1, 1, 1 };
 	int bowsette[5] = { 20, 3, 2, 5, 15 };
 	int chocomalk[5] = { 10, 5, 2, 10, 2 };
-	int lordFarquad[5] = { 28, 6, 4, 8, 21 };
+
 
 
 	
@@ -606,7 +954,7 @@ int quest()
 				if (spookyLamp[3] != 1 || spookyLamp[3] != 0)
 				{
 					srand(time(NULL)); // rng
-					cpuChoice = 1 + (rand() % 1);
+					cpuChoice = 1 + (rand() % 2);
 					if (cpuChoice == 1)
 					{
 						cout << "Danger Noodle decided to attack.\nIt did " << spookyLamp[1] / 2 << " damage!\n";
