@@ -40,6 +40,8 @@ int shop()
 
 	system("cls");
 
+
+	cout << "Owo been died XD rawr" << endl;
 	if (quotes == 1) {
 		cout << " Whaddaya buyin'? " << endl;
 	}
@@ -104,7 +106,7 @@ int shop()
 
 	cout <<endl << skill[0] << " - HP" << endl << skill[1] << " - Power" << endl << skill[2] << " - Agility" << endl << skill[3] << " - Stamina" << endl << skill[4] << " - Chrasima" << endl << skill[5] << " - Lumpther" << endl;
 	
-	cout << "Thanks For beating the Demo" << endl;
+	cout << "Thanks For beating the Demo\nSecrert Code >>";
 	cin >> boss;
 	if (boss == 69)
 	{
