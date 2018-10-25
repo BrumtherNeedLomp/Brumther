@@ -6,3 +6,4 @@
 int randUno();
 int getNum();
 int shop();
+int DeathScreen();
