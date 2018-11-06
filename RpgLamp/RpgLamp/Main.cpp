@@ -22,6 +22,18 @@ int boss;
 
 int skill[6] = { 10, 10, 5, 4, 5, 0 };
 
+int levelup()
+{
+	if (xp % 10 == 0)
+	{
+		
+	}
+
+
+
+	return 0;
+}
+
 int shop()
 
 {
@@ -39,6 +51,7 @@ int shop()
 	quotes = 1 + (rand() % 7);
 
 	system("cls");
+
 
 
 	cout << "Owo been died XD rawr" << endl;

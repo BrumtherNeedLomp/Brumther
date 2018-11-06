@@ -117,6 +117,7 @@
   <ItemGroup>
     <ClCompile Include="ChaytonL.cpp" />
     <ClCompile Include="DeathScreen.cpp" />
+    <ClCompile Include="levelup.cpp" />
     <ClCompile Include="Main.cpp" />
     <ClCompile Include="random.cpp" />
   </ItemGroup>
